@@ -1,0 +1,85 @@
+<form  [formGroup]="Group">
+    <h1>STUDENT FORM</h1>
+
+<div>
+    <label>FirstName</label>
+    <input type="text"  formControlName="FirstName" >
+</div>
+<div>
+    <label>Second Name</label>
+    <input type="text" formControlName="secondName">
+</div>
+<div>
+    <label>Course</label>
+    <select formControlName="">
+        <option value="">--Select--</option>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="EEE">EEE</option>
+    </select>
+</div>
+
+<div>
+    <label>Gender</label>
+  <input type="radio"name="Gender"value="Male" formC>Male
+  <input type="radio"name="Gender"value="Female">Female
+  <input type="radio"name="Gender"value="Others">Others
+</div>
+<div>
+    <label>Hobbies</label>
+    <input type="checkbox" value="Singing">Singing
+    <input type="checkbox" value="Playing">Playing
+    <input type="checkbox" value="reading">reading
+</div>
+<div>
+    <label>Phone</label>
+    <input type="number">
+</div>
+<div>
+    <label>Password</label>
+    <input type="password">
+</div>
+<div>
+    <label>Time</label>
+    <input type="time">
+</div>
+<div>
+    <label>dob</label>
+    <input type="date">
+</div>
+<Div>
+    <label>WebSite</label>
+    <input type="url">
+</Div>
+<div>
+    <label>File</label>
+    <input type="file">
+</div>
+
+<div>
+    <label>Select Range</label>
+    <input type="range">
+</div>
+<!-- <div>
+    <label>Search</label>
+    <input type="search">
+</div>
+<div>
+    <label>Image</label>
+    <input type="">
+</div>
+<div>
+    <label>Click</label>
+    <input type="button"  onclick="submit" value="submit">
+</div>
+<div> 
+    <label>Hidden</label>
+    <input type="hidden">
+</div>
+<div>
+<button (click)="submit()">Submit</button>
+<button (click)="reset()">Reset</button>
+</div> -->
+<button (click)="submit()">Submit</button>
+</form>
+
